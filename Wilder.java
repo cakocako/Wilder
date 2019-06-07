@@ -32,18 +32,12 @@ class Wilder {
 
 // ajouter une methode
 
-    public boolean whoAmI() { 
-        if (this.aware == true){
-             System.out.println("Je m'appelle" + " " + this.getFirstname() + " " + "et je suis aware");
-             return true;
+    public String whoAmI() { 
+        if (aware){
+             return("Je m'appelle" + " " + this.getFirstname() + " " + "et je suis aware");
         }
         else {
-            System.out.println("Je m'appelle" + " " + this.getFirstname() + " " + "et je ne suis pas aware");
-             return false;
-       
-         }
+            return("Je m'appelle" + " " + this.getFirstname() + " " + "et je ne suis pas aware");
+        }
     }
 }
-
-//creer une classe Classroom MAIN 
-
